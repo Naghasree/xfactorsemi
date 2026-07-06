@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% block title %}Home | XFactor Semiconductor{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero-section text-white d-flex align-items-center">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1 class="hero-title mb-3">Semiconductor Consulting & Turn-Key Services</h1>
+        <p class="hero-sub mb-4">
+          We offer consulting and turn-key services in the semiconductor packaging industry,
+          especially on wafer back-end, wafer-level/advanced packaging such as 2.5D/3D,
+          and semiconductor package assembly.
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="/services" class="btn btn-danger btn-lg px-4">Our Services</a>
+          <a href="/contact" class="btn btn-outline-light btn-lg px-4">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Overview -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-2">What We Do</h2>
+    <p class="text-center text-muted mb-5">Comprehensive expertise across four key areas</p>
+    <div class="row g-4">
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 service-card border-0 shadow-sm text-center p-3">
+          <div class="service-icon mb-3">
+            <i class="bi bi-lightbulb-fill"></i>
+          </div>
+          <h5 class="card-title">Expert Advice for Investors</h5>
+          <p class="card-text text-muted">
+            Expert calls to gain insights and comprehend publicly available information
+            to drive informed investment decisions.
+          </p>
+          <a href="/services#investor-advice" class="btn btn-outline-danger btn-sm mt-auto">Learn More</a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 service-card border-0 shadow-sm text-center p-3">
+          <div class="service-icon mb-3">
+            <i class="bi bi-bar-chart-fill"></i>
+          </div>
+          <h5 class="card-title">Custom Research</h5>
+          <p class="card-text text-muted">
+            Research on market position and industry trends to help with equity research
+            and assessing investment potential.
+          </p>
+          <a href="/services#custom-research" class="btn btn-outline-danger btn-sm mt-auto">Learn More</a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 service-card border-0 shadow-sm text-center p-3">
+          <div class="service-icon mb-3">
+            <i class="bi bi-cpu-fill"></i>
+          </div>
+          <h5 class="card-title">Productization</h5>
+          <p class="card-text text-muted">
+            We take your concept to prototype and manufacturing while you focus on
+            developing and marketing your product.
+          </p>
+          <a href="/services#productization" class="btn btn-outline-danger btn-sm mt-auto">Learn More</a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card h-100 service-card border-0 shadow-sm text-center p-3">
+          <div class="service-icon mb-3">
+            <i class="bi bi-diagram-3-fill"></i>
+          </div>
+          <h5 class="card-title">Technology Development</h5>
+          <p class="card-text text-muted">
+            Help form a roadmap for semiconductor packaging and define test vehicles
+            to demonstrate your process capability.
+          </p>
+          <a href="/services#tech-development" class="btn btn-outline-danger btn-sm mt-auto">Learn More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- About Summary -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <h2 class="section-title mb-3">Guiding Investors Towards Returns</h2>
+        <p class="text-muted">
+          We work with investors to evaluate investment opportunities and options to determine
+          a course of action. We also work with entrepreneurs to evaluate growth opportunities,
+          ecosystem, and SWOT analysis to enable growth and attract investment.
+        </p>
+        <p class="text-muted">
+          We share our background in semiconductor technology and continuous research to make
+          decision-making a competitive advantage for our clients.
+        </p>
+        <a href="/about" class="btn btn-danger mt-2">About Us</a>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="stat-box text-center p-4 rounded shadow-sm">
+              <div class="stat-number">2.5D/3D</div>
+              <div class="stat-label">Advanced Packaging</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-box text-center p-4 rounded shadow-sm">
+              <div class="stat-number">OSAT</div>
+              <div class="stat-label">Provider Network</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-box text-center p-4 rounded shadow-sm">
+              <div class="stat-number">IDM</div>
+              <div class="stat-label">& Fabless Support</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-box text-center p-4 rounded shadow-sm">
+              <div class="stat-number">360°</div>
+              <div class="stat-label">Ecosystem Coverage</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5 text-white text-center">
+  <div class="container">
+    <h2 class="mb-3">Ready to Work Together?</h2>
+    <p class="mb-4 opacity-75">
+      Let's discuss how XFactor Semiconductor can help your business grow.
+    </p>
+    <a href="/contact" class="btn btn-light btn-lg px-5">Contact Us Today</a>
+  </div>
+</section>
+
+{% endblock %}

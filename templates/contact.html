@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block title %}Contact | XFactor Semiconductor{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="page-header text-white py-5">
+  <div class="container">
+    <h1 class="mb-2">Contact Us</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="/" class="text-white-50">Home</a></li>
+        <li class="breadcrumb-item active text-white">Contact</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <h2 class="section-title mb-4">Get In Touch</h2>
+        <p class="text-muted mb-4">
+          Have a question or want to discuss how we can help? Reach out and we'll respond promptly.
+        </p>
+
+        <div class="contact-info-item d-flex align-items-start mb-4">
+          <div class="contact-icon me-3">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-1">Phone</h6>
+            <a href="tel:+14804784550" class="text-muted text-decoration-none">+1 (480) 478-4550</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item d-flex align-items-start mb-4">
+          <div class="contact-icon me-3">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-1">Email</h6>
+            <a href="mailto:info@xfactorsemi.com" class="text-muted text-decoration-none">info@xfactorsemi.com</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item d-flex align-items-start mb-4">
+          <div class="contact-icon me-3">
+            <i class="bi bi-linkedin"></i>
+          </div>
+          <div>
+            <h6 class="fw-bold mb-1">LinkedIn</h6>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+               class="text-muted text-decoration-none">Connect with us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-8">
+        <div class="contact-form-card p-4 p-md-5 rounded shadow-sm">
+          <h3 class="mb-4">Send Us a Message</h3>
+          <form method="POST" action="/contact" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="name" class="form-label fw-semibold">Full Name <span class="text-danger">*</span></label>
+                <input type="text" id="name" name="name" class="form-control"
+                       placeholder="Your full name" required maxlength="100">
+              </div>
+              <div class="col-sm-6">
+                <label for="email" class="form-label fw-semibold">Email Address <span class="text-danger">*</span></label>
+                <input type="email" id="email" name="email" class="form-control"
+                       placeholder="your@email.com" required maxlength="254">
+              </div>
+              <div class="col-12">
+                <label for="company" class="form-label fw-semibold">Company</label>
+                <input type="text" id="company" name="company" class="form-control"
+                       placeholder="Your company name" maxlength="100">
+              </div>
+              <div class="col-12">
+                <label for="service" class="form-label fw-semibold">Service of Interest</label>
+                <select id="service" name="service" class="form-select">
+                  <option value="">Select a service...</option>
+                  <option value="investor-advice">Expert Advice for Investors</option>
+                  <option value="custom-research">Custom Research</option>
+                  <option value="productization">Productization</option>
+                  <option value="tech-development">Technology Development</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label fw-semibold">Message <span class="text-danger">*</span></label>
+                <textarea id="message" name="message" class="form-control" rows="5"
+                          placeholder="Tell us about your project or inquiry..." required maxlength="2000"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-danger btn-lg w-100">
+                  <i class="bi bi-send-fill me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

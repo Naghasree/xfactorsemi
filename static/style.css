@@ -1,0 +1,288 @@
+/* ============================================================
+   XFactor Semiconductor - Mobile-First Custom Styles
+   Brand: Black + Red (#CC0000)
+   ============================================================ */
+
+:root {
+  --red: #CC0000;
+  --red-dark: #a30000;
+  --dark: #1a1a1a;
+  --text-muted: #6c757d;
+}
+
+/* ---- Base ---- */
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--dark);
+}
+
+/* ---- Top Bar ---- */
+.topbar {
+  background-color: var(--dark);
+  color: #ccc;
+  font-size: 0.85rem;
+}
+
+/* ---- Navbar Brand ---- */
+.brand-x {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--dark);
+  font-style: italic;
+}
+.brand-factor {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--red);
+  font-style: italic;
+}
+.brand-semi {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--red);
+  display: block;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.navbar-brand {
+  flex-direction: column;
+  align-items: flex-start !important;
+  line-height: 1.1;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  color: var(--dark) !important;
+  transition: color 0.2s;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--red) !important;
+}
+.navbar .btn-danger {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+.navbar .btn-danger:hover {
+  background-color: var(--red-dark);
+}
+
+/* ---- Hero Section ---- */
+.hero-section {
+  background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(100,0,0,0.6) 100%),
+              url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1400&q=80') center/cover no-repeat;
+  min-height: 500px;
+}
+
+.hero-title {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+/* ---- Section Title ---- */
+.section-title {
+  font-weight: 700;
+  color: var(--dark);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--red);
+  border-radius: 2px;
+}
+.text-center .section-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ---- Service Cards ---- */
+.service-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 12px !important;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important;
+}
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--red);
+}
+
+/* ---- Stat Boxes ---- */
+.stat-box {
+  background: #fff;
+  border-left: 4px solid var(--red);
+}
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--red);
+}
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ---- CTA Section ---- */
+.cta-section {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--red-dark) 100%);
+}
+
+/* ---- Page Header ---- */
+.page-header {
+  background: linear-gradient(135deg, var(--dark) 0%, #3d0000 100%);
+}
+.page-header h1 {
+  font-weight: 700;
+}
+
+/* ---- Service Icon Large ---- */
+.service-icon-lg {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(204, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.service-icon-lg i {
+  font-size: 2.5rem;
+  color: var(--red);
+}
+
+/* ---- About Highlights ---- */
+.about-highlight {
+  background: #fff;
+  border-left: 4px solid var(--red);
+}
+
+/* ---- Expertise Cards ---- */
+.expertise-card {
+  background: #fff;
+  transition: transform 0.2s;
+}
+.expertise-card:hover {
+  transform: translateY(-3px);
+}
+
+/* ---- Contact ---- */
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(204, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--red);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.contact-form-card {
+  background: #fff;
+  border: 1px solid #e9ecef;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 0.2rem rgba(204, 0, 0, 0.15);
+}
+.btn-danger {
+  background-color: var(--red) !important;
+  border-color: var(--red) !important;
+}
+.btn-danger:hover {
+  background-color: var(--red-dark) !important;
+  border-color: var(--red-dark) !important;
+}
+.btn-outline-danger {
+  color: var(--red) !important;
+  border-color: var(--red) !important;
+}
+.btn-outline-danger:hover {
+  background-color: var(--red) !important;
+  color: #fff !important;
+}
+
+/* ---- Footer ---- */
+.footer {
+  background-color: var(--dark);
+  padding: 3rem 0 1.5rem;
+}
+.footer-link {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.4rem;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: var(--red);
+}
+.footer .brand-x  { color: #fff; }
+.footer .brand-factor { color: var(--red); }
+
+/* ============================================================
+   RESPONSIVE - Mobile First
+   ============================================================ */
+
+/* Tablets and smaller */
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: 400px;
+  }
+  .hero-section .container {
+    text-align: center;
+  }
+  .hero-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-section .d-flex {
+    justify-content: center;
+  }
+  .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 576px) {
+  .hero-section {
+    min-height: 350px;
+    padding: 3rem 0;
+  }
+  .navbar-brand .brand-x,
+  .navbar-brand .brand-factor {
+    font-size: 1.3rem;
+  }
+  .contact-form-card {
+    padding: 1.5rem !important;
+  }
+  .service-icon-lg {
+    width: 70px;
+    height: 70px;
+  }
+  .service-icon-lg i {
+    font-size: 2rem;
+  }
+}
