@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.secret_key = "xfactor-semi-secret"
 
 # ── Change this password to whatever you want ──
-SITE_PASSWORD = "xfactor2026"
+SITE_PASSWORD = "Passme22$"
 
 
 def login_required(f):
